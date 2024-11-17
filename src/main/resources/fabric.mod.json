@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "various-moths",
+	"version": "${version}",
+	"name": "Various Moths",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Lady Death's Head"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/La-ryssa/various-moths"
+	},
+	"license": "MIT",
+	"icon": "assets/various-moths/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ladydeath.variousmoths.VariousMoths"
+		],
+		"fabric-datagen": [
+			"ladydeath.variousmoths.VariousMothsDataGenerator"
+		],
+		"client": [
+			"ladydeath.variousmoths.VariousMothsClient"
+		]
+	},
+	"mixins": [
+		"various-moths.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
